@@ -2,6 +2,8 @@ def isPresent(lis,st):
     for i in range(0, len(lis)):
         if lis[i] == st:
             return i
+    else:
+        return -1
 
 lis = []
 for j in range(int(input())):
