@@ -100,9 +100,8 @@ for _ in range(n):
     libObj.append(Library(bookList,libraryAddress))
 
 city = input()
-for j in range(n):
-    obj = libObj[j]
-    res = obj.booksByAuthors()
-    print(*res.keys(), *res.values())
+obj = libObj[0]
+res = obj.booksByAuthors()
+print(*res.keys(), *res.values())
 books = findbookType(city,libObj)
 print(books)
